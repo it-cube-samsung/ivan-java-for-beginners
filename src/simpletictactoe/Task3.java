@@ -1,7 +1,20 @@
 package simpletictactoe;
 
-public class Task3 {
+import java.util.Scanner;
+
+class TicTacToe {
     public static void main(String[] args) {
-        System.out.println("Task3");
+        Scanner scanner = new Scanner(System.in);
+        String vvod = scanner.next();
+        System.out.println(vvod);
+
+        System.out.println("---------");
+        for(int i = 0; i < 3; i += 1) {
+            int startIndex = i * 3;
+            String res = "| " + vvod.charAt(startIndex) + " " + vvod.charAt(startIndex + 1) + " " + vvod.charAt(startIndex + 2) + " |";
+            System.out.println(res);
+        }
+        System.out.println("---------");
+
     }
 }
