@@ -77,7 +77,7 @@ class Task5 {
                 continue;
             }
 
-            char ch = (counter % 2 == 0) ? 'O' : 'X';
+            char ch = (counter % 2 == 0) ? '0' : 'X';
             arr[coord01][coord02] = ch;
             freeplaces--;
             counter++;
